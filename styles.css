@@ -1,0 +1,224 @@
+/* see the brand guide for colors, fonts, and images in CodePen: 
+https://docs.google.com/document/d/124Wli0Rxp4GhOrrOijzznbnOfNC9kP8wOVZnPZsR2DE/edit?usp=sharing */
+html {
+    box-sizing: border-box;
+  }
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  /* Basic Reset */
+  body {
+    background-color: #D98555;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: #131D26;
+    color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    width: 25%;
+  }
+  
+  .navButton {
+    display: flex;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    align-self: center;
+    padding: 0;
+  }
+  
+  li {
+    padding: 10px;
+    display: flex;
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #F2F2F2;
+  }
+  
+  a:hover {
+    color: #636b75;
+  }
+  
+  /* Section Styling */
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    padding: 30px;
+    margin: 60px;
+  }
+  
+  h1 {
+    font-size: 10rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Main Content Styling */
+  .main {
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    border: 2px solid #F2F2F2;
+    margin: 20px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, .5);
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .img {
+    padding: 30px;
+    align-items: center;
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, .5);
+  }
+  
+  /* Typography */
+  p {
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    padding: 10px;
+    line-height: 1.5;
+    word-spacing: 0.5rem;
+  }
+  
+  .imgDescription {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .button {
+    padding: 20px;
+  }
+  
+  button {
+    font-family: "Zilla Slab", serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    background-color: #082B59;
+    color: #F2F2F2;
+    padding: 15px 30px;
+    margin: 0;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, .5);
+  }
+  
+  button:hover {
+    background-color: #0c3f82;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #131D26;
+    color: #F2F2F2;
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Responsive Media Queries */
+  @media (max-width: 1024px) {
+    section {
+      padding: 10px;
+      margin: 20px;
+    }
+  
+    h1 {
+      font-size: 5rem;
+      margin-bottom: 10px;
+    }
+  
+    .main {
+      margin: 10px;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    button {
+      font-size: 1.25rem;
+      padding: 10px 20px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    li {
+      padding: 5px;
+    }
+  
+    section {
+      padding: 10px;
+      margin: 20px;
+    }
+  
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 5px;
+    }
+  
+    p {
+      font-size: 0.875rem;
+    }
+  
+    button {
+      font-size: 1rem;
+      padding: 8px 16px;
+    }
+  
+    /* Center footer items on mobile */
+    footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  
